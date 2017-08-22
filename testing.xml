@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+<!-- BeginBasicSettings: Add-in metadata, used for all versions of Office unless override provided -->
+  
+  <!--IMPORTANT! Id must be unique for your add-in, if you clone this manifest ensure that you change this id to your own GUID -->
+  <Id>657a32a9-ab8a-4579-ac9f-df1a11a64e52</Id>
+  
+  <!--Version. Updates from the store only get triggered if there is a version change -->
+  <Version>1.0.0.0</Version>
+  <ProviderName>Contoso</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <!-- The display name of your add-in. Used on the store and various placed of the Office UI such as the add-ins dialog -->
+  <DisplayName DefaultValue="Commenting" />
+  <Description DefaultValue="Commenting"/>
+  
+  <!--Icon for your add-in. Used on installation screens and the add-ins dialog -->
+  <IconUrl DefaultValue="https://i.imgur.com/MPuvMiq.png" />
+  
+        <!--Todo: Add requirement sets and remove  commenting of high res icon -->
+      <!--The HighResolutionIcon element is commented because it is valid only for 1.1 (or above) versions of the manifest.
+          To use this property, convert this manifest to version 1.1 by adding an API set in the Activation tab of the manifest editor.-->
+      <!--<HighResolutionIconUrl DefaultValue="https://i.imgur.com/MPuvMiq.png" />-->
+  
+  <!--Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list -->
+  <AppDomains>
+    <AppDomain>AppDomain1</AppDomain>
+  </AppDomains>
+  <!--EndBasicSettings-->
+  
+  <!--BeginTaskpaneMode integration. Office 2013 and any client that doesn't understand commands will use this section.
+    This section will also be used if there are no VersionOverrides -->
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="comment.html" />
+  </DefaultSettings>
+  <!--EndTaskpaneMode integration -->
+  
+  <Permissions>ReadWriteDocument</Permissions>
+
+  
+  </OfficeApp>
