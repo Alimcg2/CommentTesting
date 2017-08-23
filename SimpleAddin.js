@@ -13,20 +13,21 @@ Office.initialize = function (reason) {
 // Reads data from current document selection and displays a notification
 function createNew() {
     console.log("it worked!");
-    $("#allComments").className = "hidden";
+    $("#allComments").className = "hidden");
+    console.log($("#createNew"));
     $("#createNew").classList.add("hidden");
     $("#back").classList.remove("hidden");
 
-    // Office.context.document.setSelectedDataAsync("Something",
-    //     function (asyncResult) {
-    //         var error = asyncResult.error;
-    //         if (asyncResult.status === "failed") {
-    //             //show error. Upcoming displayDialog API will help here.
-    //         }
-    //         else {
-    //             //show success.Upcoming displayDialog API will help here.
-    //         }
-    //     });
+    Office.context.document.setSelectedDataAsync({cellFormat:[format: {fontColor: "yellow"}},
+        function (asyncResult) {
+            var error = asyncResult.error;
+            if (asyncResult.status === "failed") {
+                //show error. Upcoming displayDialog API will help here.
+            }
+            else {
+                //show success.Upcoming displayDialog API will help here.
+            }
+        });
 }
 
 })();
