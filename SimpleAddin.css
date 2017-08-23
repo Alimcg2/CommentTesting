@@ -1,15 +1,16 @@
-body {
-	background-color: pink;
-}
+    body {
+    background-color: white;
+    }
 
-#allComments {
-	border: 1px solid gray;
-	padding: 10px;
-	margin: auto;
-	overflow: scroll;
-	margin-bottom: 30px;
-}
+    #allComments {
+        border: 1px solid gray;
+        padding: 10px;
+        margin: auto;
+        overflow: scroll;
+        height: 80%;
+        margin-bottom: 30px;
+    }
 
-.state img {
-	width: 20px;
-}
+    .state img {
+        width: 20px;
+    }
