@@ -18,7 +18,7 @@ function createNew() {
     $("#createNew").classList.add("hidden");
     $("#back").classList.remove("hidden");
 
-    Office.context.document.setSelectedDataAsync({cellFormat:[format: {fontColor: "yellow"}]},
+    Office.context.document.setSelectedDataAsync({cellFormat: [format: {fontColor: "yellow"}]},
         function (asyncResult) {
             var error = asyncResult.error;
             if (asyncResult.status === "failed") {
