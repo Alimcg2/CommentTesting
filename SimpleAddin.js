@@ -4,7 +4,7 @@
 Office.initialize = function (reason) {
     $(document).ready(function () {
         $("#writeTextButton").click(function (event) {
-            writeText();
+            writeText(text);
         });
         //
     });
@@ -12,7 +12,7 @@ Office.initialize = function (reason) {
 
 // Reads data from current document selection and displays a notification
 function writeText() {
-    Office.context.document.setSelectedDataAsync("OMGGG",
+    Office.context.document.setSelectedDataAsync("Something",
         function (asyncResult) {
             var error = asyncResult.error;
             if (asyncResult.status === "failed") {

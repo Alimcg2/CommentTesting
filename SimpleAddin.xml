@@ -11,8 +11,8 @@
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
    <!-- The display name of your add-in. Used on the store and various placed of the Office UI such as the add-ins dialog -->
-  <DisplayName DefaultValue="Sampling" />
-  <Description DefaultValue="Sample that illustrates add-in commands basic control types and actions" />
+  <DisplayName DefaultValue="Collaborator" />
+  <Description DefaultValue="Collaborate with others, comment and resove tasks." />
    <!--Icon for your add-in. Used on installation screens and the add-ins dialog -->
   <IconUrl DefaultValue="https://i.imgur.com/oZFS95h.png" />
 
