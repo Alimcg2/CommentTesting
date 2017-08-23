@@ -16,6 +16,7 @@ function createNew() {
     $("#allComments")[0].classList.add("hidden");
     $("#createNew")[0].classList.add("hidden");
     $("#back")[0].classList.remove("hidden");
+    $("#back")[0].onclick = backToAll;
 
     Office.context.document.setSelectedDataAsync(
     {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
@@ -30,5 +31,10 @@ function createNew() {
             }
         });
 }
+    function backToAll(){
+        $("#allComments")[0].classList.remove("hidden");
+        $("#createNew")[0].classList.remove("hidden");
+        $("#back")[0].classList.add("hidden");
+    }
 
 })();
