@@ -35,7 +35,7 @@
 
         // Reads data from current document selection and displays a notification
         function writeText() {
-            Office.context.document.setSelectedDataAsync("Data umm",
+            Office.context.document.setSelectedDataAsync("Data here",
                 function (asyncResult) {
                     var error = asyncResult.error;
                     if (asyncResult.status === "failed") {
@@ -53,10 +53,14 @@
     </script>
 </head>
 <body>
+    <p>This is some text</p>
+    <p>Status: In progress</p>
+    <p>Assigned to: Alison McGuire</p>
     <button class="ms-Button" id="writeTextButton">
         <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
         <span class="ms-Button-label">Insert Text</span>
         <span class="ms-Button-description">Insert Text into Document</span>
     </button>
+
 </body>
 </html>
