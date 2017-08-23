@@ -12,7 +12,8 @@ Office.initialize = function (reason) {
 
 // Reads data from current document selection and displays a notification
 function createNew() {
-    $("#allComments").classList.add("hidden");
+    console.log("it worked!");
+    $("#allComments").className = "hidden";
     $("#createNew").classList.add("hidden");
     $("#back").classList.remove("hidden");
 
