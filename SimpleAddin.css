@@ -17,14 +17,14 @@ h2{
 }
 .cellComment{
 	margin-left: 10px;
-    cursor: pointer;
+	cursor: pointer;
 }
 .cellComment:hover{
-    opacity: 0.7;
+	opacity: 0.7;
 }
 #allComments {
-    padding: 10px;
-    margin: auto;
+	padding: 10px;
+	margin: auto;
 }
 
 hr{
@@ -32,16 +32,21 @@ hr{
 }
 
 .state img {
-    width: 20px;
+	width: 20px; 
+	vertical-align: top;
 }
 
-#createNew {
+.button {
 	background-color: #e7e7e7; 
 	border: none;
-    padding: 15px 32px;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 5%;
-    width: 90%;
+	padding: 15px 32px;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 5%;
+	width: 90%;
+}
+
+.hidden {
+	display: none;
 }
