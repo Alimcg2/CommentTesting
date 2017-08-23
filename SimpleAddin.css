@@ -52,3 +52,46 @@ hr{
 .hidden {
 	display: none;
 }
+#individualView {
+	margin: 10px;
+}
+
+.userImg{
+	width: 30px;
+	vertical-align: top;
+}
+.commentBox{
+	background-color: #e7e7e7; 
+	padding: 10px;
+	margin: 10px;
+}
+textarea {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.userName {
+	color: gray;
+	font-size: 10px;
+	font-style: italic;
+	margin-left: 10px;
+}
+
+.userComment {
+	display: inline;
+
+}
+.tagged {
+	color: #5368b2;
+}
+#commentInput {
+	font-family: "Segoe UI", Arial, Verdana, sans-serif, "Mongolian Baiti", "Microsoft Yi Baiti", "Javanese Text";
+	color: #e7e7e7;
+}
+#submitComment {
+	width: 60px;
+	font-size: 10px;
+	padding: 8px;
+	margin: 0px;
+	vertical-align: bottom;
+}

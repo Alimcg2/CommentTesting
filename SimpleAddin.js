@@ -12,15 +12,7 @@ Office.initialize = function (reason) {
 
 // Reads data from current document selection and displays a notification
 function createNew() {
-    console.log("it worked!");
-    $("#allComments")[0].classList.add("hidden");
-    $("#createNew")[0].classList.add("hidden");
-    $("#back")[0].classList.remove("hidden");
-    $("#back")[0].onclick = backToAll;
-
-    Office.context.document.setSelectedDataAsync(
-    {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
-        {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
+    Office.context.document.setSelectedDataAsync("Comment", 
         function (asyncResult) {
             var error = asyncResult.error;
             if (asyncResult.status === "failed") {
@@ -30,6 +22,11 @@ function createNew() {
                 //show success.Upcoming displayDialog API will help here.
             }
         });
+    $("#allComments")[0].classList.add("hidden");
+    $("#createNew")[0].classList.add("hidden");
+    $("#back")[0].classList.remove("hidden");
+    $("#back")[0].onclick = backToAll;
+    $("#individualView")[0].classList.remove("hidden");
 }
     function backToAll(){
         $("#allComments")[0].classList.remove("hidden");
