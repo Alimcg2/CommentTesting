@@ -9,11 +9,11 @@ Office.initialize = function (reason) {
         //
     });
 };
-var commentText = $("#commentDescr")[0].innerHTML;
+var commentText = $("#commentDescr")[0];
 // Reads data from current document selection and displays a notification
 function createNew() {
     console.log(commentText);
-    Office.context.document.setSelectedDataAsync(commentText, 
+    Office.context.document.setSelectedDataAsync("testing", 
         function (asyncResult) {
             var error = asyncResult.error;
             if (asyncResult.status === "failed") {
