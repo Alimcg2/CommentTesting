@@ -13,10 +13,9 @@ Office.initialize = function (reason) {
 // Reads data from current document selection and displays a notification
 function createNew() {
     console.log("it worked!");
-    $("#allComments").className = "hidden";
-    console.log($("#createNew"));
-    $("#createNew").classList.add("hidden");
-    $("#back").classList.remove("hidden");
+    $("#allComments")[0].classList.add("hidden");
+    $("#createNew")[0].classList.add("hidden");
+    $("#back")[0].classList.remove("hidden");
 
     Office.context.document.setSelectedDataAsync(
     {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
