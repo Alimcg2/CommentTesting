@@ -11,7 +11,7 @@
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
    <!-- The display name of your add-in. Used on the store and various placed of the Office UI such as the add-ins dialog -->
-  <DisplayName DefaultValue="Add-in Commands Sample" />
+  <DisplayName DefaultValue="Sampling" />
   <Description DefaultValue="Sample that illustrates add-in commands basic control types and actions" />
    <!--Icon for your add-in. Used on installation screens and the add-ins dialog -->
   <IconUrl DefaultValue="https://i.imgur.com/oZFS95h.png" />
@@ -22,7 +22,7 @@
     <Host Name="Document"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://commandsimple.azurewebsites.net/Taskpane.html" />
+    <SourceLocation DefaultValue="https://alimcg2.github.io/CommentTesting/SimpleAddin.html" />
   </DefaultSettings>
    <!--EndTaskpaneMode integration -->
 
@@ -181,7 +181,7 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Contoso.FunctionFile.Url" DefaultValue="https://commandsimple.azurewebsites.net/FunctionFile.html" />
-        <bt:Url id="Contoso.Taskpane1.Url" DefaultValue="https://commandsimple.azurewebsites.net/Taskpane.html" />
+        <bt:Url id="Contoso.Taskpane1.Url" DefaultValue="https://alimcg2.github.io/CommentTesting/SimpleAddin.html" />
         <bt:Url id="Contoso.Taskpane2.Url" DefaultValue="https://commandsimple.azurewebsites.net/Taskpane2.html" />
          <!--LearnMore URL currently not used -->
         <bt:Url id="Contoso.GetStarted.LearnMoreUrl" DefaultValue="https://commandsimple.azurewebsites.net/GetStarted.html">
