@@ -34,7 +34,7 @@
       <!--Each host can have a different set of commands. Cool huh!? -->
       <!-- Workbook=Excel Document=Word Presentation=PowerPoint -->
       <!-- Make sure the hosts you override match the hosts declared in the top section of the manifest -->
-      <Host xsi:type="Document">
+      <Host xsi:type="Workbook">
       	<!-- Form factor. Currenly only DesktopFormFactor is supported. We will add TabletFormFactor and PhoneFormFactor in the future-->
         <DesktopFormFactor>
           
