@@ -13,16 +13,16 @@ var commentText = $("#inCell");
 // Reads data from current document selection and displays a notification
 function createNew() {
     console.log(commentText);
-    Office.context.document.setSelectedDataAsync("testing", 
-        function (asyncResult) {
-            var error = asyncResult.error;
-            if (asyncResult.status === "failed") {
-                //show error. Upcoming displayDialog API will help here.
-            }
-            else {
-                //show success.Upcoming displayDialog API will help here.
-            }
-        });
+    // Office.context.document.setSelectedDataAsync("testing", 
+    //     function (asyncResult) {
+    //         var error = asyncResult.error;
+    //         if (asyncResult.status === "failed") {
+    //             //show error. Upcoming displayDialog API will help here.
+    //         }
+    //         else {
+    //             //show success.Upcoming displayDialog API will help here.
+    //         }
+    //     });
     $("#allComments")[0].classList.add("hidden");
     $("#createNew")[0].classList.add("hidden");
     $("#back")[0].classList.remove("hidden");
