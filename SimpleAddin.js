@@ -9,7 +9,7 @@ Office.initialize = function (reason) {
         //
     });
 };
-var commentText = $("#commentDescr");
+var commentText = $("#commentDescr").value;
 // Reads data from current document selection and displays a notification
 function createNew() {
     console.log(commentText);
