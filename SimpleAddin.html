@@ -13,7 +13,9 @@
     <!-- Office UI Fabric for look and feel. Visit http://dev.office.com/fabric for more info-->
     <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
     <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.components.min.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+    <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
@@ -132,6 +134,24 @@
         <p class="inCell">commenting here</p>
         <textarea rows="4" cols="45" class="commentInput">Comment</textarea>
         <button class="submitComment button">Submit</button>
+        <div class="userBox">
+            <p>Collaborators</p>
+            <div class="currentCollabing">Alsion McGuire</div>
+            <form action="http://httpbin.org/post" method="post">
+              <select data-placeholder="Begin typing a name to filter..." multiple class="chosen-select" name="test">
+                <option value=""></option>
+                <option>Alison McGuire</option>
+                <option>Greg Kriegler</option>
+                <option>Brown Bear</option>
+                <option>Giant Panda</option>
+                <option>Sloth Bear</option>
+                <option>Sun Bear</option>
+                <option>Polar Bear</option>
+                <option>Spectacled Bear</option>
+              </select>
+              <input type="submit" class="button submitPerson">
+            </form>
+        </div>
         <div class="statusBox">
             <span class="markResolved"><img class="statusButton" src="Images/Resolved.png"></span>
             <span class="markCanceled"><img class="statusButton" src="Images/Canceled.png"></span>

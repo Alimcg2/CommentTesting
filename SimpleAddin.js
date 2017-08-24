@@ -1,8 +1,11 @@
 // The initialize function must be run each time a new page is loaded
 (function () {
-    var currentCellText;
+    var currentCellText; 
     Office.initialize = function (reason) {
         $(document).ready(function () {
+            $(".chosen-select").chosen({
+                no_results_text: "Oops, nothing found!"
+            })
             $("#clickMe").click(function (event) {
                 clickMe();
             });
