@@ -18,13 +18,12 @@
                 bindNamedItem({row: 4, column: 3}, "#a88986");
                 $("#statusChange")[0].innerHTML = "Stopped";
             });
-            console.log($("#submitPerson"));
             $("#submitPerson")[0].onclick = function() {
                 console.log($("#currentCollab1")[0]);
                 $("#currentCollab1")[0].classList.add("hidden");
                 $("#brownBear")[0].classList.add("hidden");
                 $("#currentCollab2")[0].classList.remove("hidden");
-            });
+            };
         });
     };
     // Reads data from current document selection and displays a notification
