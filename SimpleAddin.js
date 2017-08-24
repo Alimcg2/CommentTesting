@@ -1,5 +1,6 @@
 // The initialize function must be run each time a new page is loaded
 (function () {
+    var currentCellText;
     Office.initialize = function (reason) {
         $(document).ready(function () {
             $("#clickMe").click(function (event) {
@@ -36,6 +37,7 @@
         $("#back")[0].onclick = backToAll;
         $("#newView")[0].classList.remove("hidden");
         getText();
+        document.getElementById("inCell").innerHTML = currentCellText;
     }
     function backToAll() {
         $("#allComments")[0].classList.remove("hidden");
@@ -46,7 +48,6 @@
     }
 
     function getText() {
-        console.log("It ran");
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Text,
             { valueFormat: "unformatted", filterType: "all" },
             function (asyncResult) {
@@ -58,6 +59,7 @@
                     // Get selected data.
                     var dataValue = asyncResult.value;
                     console.log('Selected data is ' + dataValue);
+                    currentCellText = datavalue;
                 }
             });
     }
