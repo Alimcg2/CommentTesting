@@ -14,7 +14,7 @@
                 showInactive();
             });
             $("#cancelButton").click(function (event) {
-                bindNamedItem({row: 4, column: 3}, "#2f4260");
+                bindNamedItem({row: 4, column: 3}, "#914549");
             });
 
         });
@@ -95,6 +95,7 @@
     function hideInactive(){
         $("#inactive1")[0].classList.add("hidden");
         $("#inactive2")[0].classList.add("hidden");
+        $("#inactiveConvos")[0].onclick = showInactive;
     }
 
 })();
