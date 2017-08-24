@@ -124,10 +124,12 @@ textarea {
 	margin: 10px;
 }
 #downArrow {
-	width: 40px;
+	width: 30px;
 	display: inline;
 	vertical-align: bottom;
 	float: right;
+	opacity: 80%;
+	margin-right: 10px;
 }
 h1 {
 	display: inline;
