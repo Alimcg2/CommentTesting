@@ -97,12 +97,17 @@
     function showInactive(){
         $("#inactive1")[0].classList.remove("hidden");
         $("#inactive2")[0].classList.remove("hidden");
-        $("#inactiveConvos")[0].onclick = hideInactive;
+            $("#inactiveConvos").click(function (event) {
+                hideInactive();
+            });
     }
+
     function hideInactive(){
         $("#inactive1")[0].classList.add("hidden");
         $("#inactive2")[0].classList.add("hidden");
-        $("#inactiveConvos")[0].onclick = showInactive;
+            $("#inactiveConvos").click(function (event) {
+                showInactive();
+            });
     }
 
 })();
