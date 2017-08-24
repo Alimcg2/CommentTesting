@@ -37,7 +37,7 @@
         $("#back")[0].onclick = backToAll;
         $("#newView")[0].classList.remove("hidden");
         getText();
-        console.log(document.getElementById("updateCell"));\
+        console.log(document.getElementById("updateCell"));
         document.getElementById("updateCell").innerHTML = currentCellText;
     }
     function backToAll() {
