@@ -24,10 +24,7 @@
         //             //show success.Upcoming displayDialog API will help here.
         //         }
         //     });
-         Office.select("bindings#myBinding").setFormatsAsync(
-    [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
-        {cells: {row: 3, column: 4}, format: {borderColor: "red", fontStyle: "bold"}}], 
-    function (asyncResult){});
+        bindNamedItem();
         $("#allComments")[0].classList.add("hidden");
         $("#createNew")[0].classList.add("hidden");
         $("#back")[0].classList.remove("hidden");
@@ -38,6 +35,22 @@
             console.log(context.sync());
             return context.sync()
     }
+
+    function bindNamedItem() {
+    Office.context.document.bindings.addFromNamedItemAsync("Table1", "table", {id:'myBinding'}, function (result) {
+        if (result.status == 'succeeded'){
+            console.log('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
+            }
+        else
+            console.log('Error: ' + result.error.message);
+    });
+
+    Office.select("bindings#myBinding").setFormatsAsync(
+    [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+        {cells: {row: 3, column: 4}, format: {borderColor: "red", fontStyle: "bold"}}], 
+    function (asyncResult){});
+}
+
     function createNew() {
         $("#allComments")[0].classList.add("hidden");
         $("#createNew")[0].classList.add("hidden");
