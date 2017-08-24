@@ -24,6 +24,10 @@
         //             //show success.Upcoming displayDialog API will help here.
         //         }
         //     });
+         Office.context.document.setSelectedDataAsync(
+    {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+        {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
+    function (asyncResult){});
         $("#allComments")[0].classList.add("hidden");
         $("#createNew")[0].classList.add("hidden");
         $("#back")[0].classList.remove("hidden");
