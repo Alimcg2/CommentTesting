@@ -35,13 +35,14 @@ function createNew() {
     $("#createNew")[0].classList.add("hidden");
     $("#back")[0].classList.remove("hidden");
     $("#back")[0].onclick = backToAll;
-    $("#individualView")[0].classList.remove("hidden");
+    $("#newView")[0].classList.remove("hidden");
 }
 function backToAll(){
     $("#allComments")[0].classList.remove("hidden");
     $("#createNew")[0].classList.remove("hidden");
     $("#back")[0].classList.add("hidden");
     $("#individualView")[0].classList.add("hidden");
+    $("#newView")[0].classList.add("hidden");
 }
 
 })();
