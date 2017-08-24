@@ -36,9 +36,8 @@
         $("#back")[0].classList.remove("hidden");
         $("#back")[0].onclick = backToAll;
         $("#newView")[0].classList.remove("hidden");
-        getText();
         console.log(document.getElementById("updateCell"));
-        document.getElementById("updateCell").innerHTML = currentCellText;
+        document.getElementById("updateCell").innerHTML = getText();
     }
     function backToAll() {
         $("#allComments")[0].classList.remove("hidden");
@@ -60,7 +59,7 @@
                     // Get selected data.
                     var dataValue = asyncResult.value;
                     console.log('Selected data is ' + dataValue);
-                    currentCellText = dataValue;
+                    return dataValue;
                 }
             });
     }
