@@ -111,3 +111,6 @@ textarea {
 	margin: 10px;
 	cursor: pointer;
 }
+.page, .cell {
+	font-size: 16px;
+}
