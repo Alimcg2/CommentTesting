@@ -19,7 +19,7 @@
                 $("#statusChange")[0].innerHTML = "Stopped";
             });
             console.log($("#submitPerson"));
-            $("#submitPerson")[0].click(function (event) {
+            $("#submitPerson")[0].onclick = function() {
                 console.log($("#currentCollab1")[0]);
                 $("#currentCollab1")[0].classList.add("hidden");
                 $("#brownBear")[0].classList.add("hidden");
