@@ -24,10 +24,9 @@
         //             //show success.Upcoming displayDialog API will help here.
         //         }
         //     });
-        var testCell = Office.context.document.
-         Office.context.document.setSelectedDataAsync(
-    {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
-        {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
+         Office.select("bindings#myBinding").setFormatsAsync(
+    [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+        {cells: {row: 3, column: 4}, format: {borderColor: "red", fontStyle: "bold"}}], 
     function (asyncResult){});
         $("#allComments")[0].classList.add("hidden");
         $("#createNew")[0].classList.add("hidden");
