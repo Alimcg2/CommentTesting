@@ -3,16 +3,17 @@
 (function () {
 Office.initialize = function (reason) {
     $(document).ready(function () {
+        $("#clickMe").click(function (event) {
+            clikMe();
+        });
+        
         $("#createNew").click(function (event) {
             createNew();
         });
-        //
     });
 };
-var commentText = $("#inCell");
 // Reads data from current document selection and displays a notification
-function createNew() {
-    console.log(commentText);
+function clickMe() {
     // Office.context.document.setSelectedDataAsync("testing", 
     //     function (asyncResult) {
     //         var error = asyncResult.error;
@@ -29,10 +30,18 @@ function createNew() {
     $("#back")[0].onclick = backToAll;
     $("#individualView")[0].classList.remove("hidden");
 }
-    function backToAll(){
-        $("#allComments")[0].classList.remove("hidden");
-        $("#createNew")[0].classList.remove("hidden");
-        $("#back")[0].classList.add("hidden");
-    }
+function createNew() {
+    $("#allComments")[0].classList.add("hidden");
+    $("#createNew")[0].classList.add("hidden");
+    $("#back")[0].classList.remove("hidden");
+    $("#back")[0].onclick = backToAll;
+    $("#individualView")[0].classList.remove("hidden");
+}
+function backToAll(){
+    $("#allComments")[0].classList.remove("hidden");
+    $("#createNew")[0].classList.remove("hidden");
+    $("#back")[0].classList.add("hidden");
+    $("#individualView")[0].classList.add("hidden");
+}
 
 })();

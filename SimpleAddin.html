@@ -32,7 +32,7 @@
         <div class="sheetComments">
             <h2>00_01</h2>
             <div class="cellComments">
-                <div class="cellComment">
+                <div class="cellComment" id="clickMe">
                     <span class="state inProgress"><img src="Images/InProgress.png"></span>
                     <span class="callNum">D6</span>
                     <span class="commentDescr">We need a graphic of a 3 pronged adaptor here</span>
@@ -79,12 +79,17 @@
     </div>
     <button id="back" class="button hidden">Back</button>
     <div id="individualView" class="hidden">
-        <div id="title">
-            <span id="page">00_01</span>
-            <span id="cell">D6</span>
+        <div class="title">
+            <span class="page">00_01</span>
+            <span class="cell">D6</span>
         </div>
-        <p id="inCell">We need a graphic of a 3 pronged adaptor here</p>
-        <div id="commentArea">
+        <div class="statusBox">
+            <p class="status">In Progress</p>
+            <span class="markResolved"><img class="statusButton" src="Images/Resolved.png"></span>
+            <span class="markCanceled"><img class="statusButton" src="Images/Canceled.png"></span>
+        </div>
+        <p class="inCell">We need a graphic of a 3 pronged adaptor here</p>
+        <div class="commentArea">
             <div class="commentBox">
                 <span><img class="userImg" src="Images/UserIcon.png"></span>
                 <span class="userComment">
@@ -110,8 +115,24 @@
                 </span>
             </div>
         </div>
-        <textarea rows="4" cols="35" id="commentInput">Comment</textarea>
-        <button id="submitComment" class="button">Submit</button>
+        <textarea rows="4" cols="35" class="commentInput">Comment</textarea>
+        <button class="submitComment button">Submit</button>
+    </div>
+
+    <div id="newView" class="hidden">
+        <div class="title">
+            <span class="page">00_01</span>
+            <span class="cell">D3</span>
+        </div>
+        <div class="statusBox">
+            <p class="status"><span class="gray">Currently: </span> In Progress</p>
+            <span class="markResolved"><img class="statusButton" src="Images/Resolved.png"></span>
+            <span class="markCanceled"><img class="statusButton" src="Images/Canceled.png"></span>
+        </div>
+        <p class="gray">Description:</p>
+        <p class="inCell">commenting here</p>
+        <textarea rows="4" cols="35" class="commentInput">Comment</textarea>
+        <button class="submitComment button">Submit</button>
     </div>
 <!--     <button class="ms-Button" id="writeTextButton">
         <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
