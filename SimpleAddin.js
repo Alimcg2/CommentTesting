@@ -30,10 +30,6 @@
         $("#back")[0].classList.remove("hidden");
         $("#back")[0].onclick = backToAll;
         $("#individualView")[0].classList.remove("hidden");
-        var mySelection = context.document.getSelection().parentTableCell;
-            context.load(mySelection);
-            console.log(context.sync());
-            return context.sync()
     }
 
     function bindNamedItem() {
@@ -46,8 +42,7 @@
     });
 
     Office.select("bindings#myBinding").setFormatsAsync(
-    [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
-        {cells: {row: 3, column: 4}, format: {borderColor: "red", fontStyle: "bold"}}], 
+    [{cells: {row: 1}, format: {fillColor: "yellow"}} ], 
     function (asyncResult){});
 }
 
