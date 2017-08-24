@@ -35,7 +35,7 @@
         $("#back")[0].classList.remove("hidden");
         $("#back")[0].onclick = backToAll;
         $("#newView")[0].classList.remove("hidden");
-        getText;
+        getText();
     }
     function backToAll() {
         $("#allComments")[0].classList.remove("hidden");
