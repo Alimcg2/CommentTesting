@@ -46,7 +46,7 @@
 
     Office.select("bindings#myBinding").setFormatsAsync(
     [
-        {cells: {row: 3, column: 4}, format: {fontColor: "red", fontStyle: "bold"}}], 
+        {cells: {row: 4, column: 3}, format: {fontColor: "red", fontStyle: "bold"}}], 
     function (asyncResult){});
 }
 
