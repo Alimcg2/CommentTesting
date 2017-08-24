@@ -12,7 +12,7 @@
             });
             $("#inactiveConvos").click(function (event)) {
                 showInactive();
-            }
+            });
         });
     };
     // Reads data from current document selection and displays a notification
