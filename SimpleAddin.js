@@ -4,7 +4,7 @@
 Office.initialize = function (reason) {
     $(document).ready(function () {
         $("#clickMe").click(function (event) {
-            clikMe();
+            clickMe();
         });
         
         $("#createNew").click(function (event) {
