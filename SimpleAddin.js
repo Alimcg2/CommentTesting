@@ -24,6 +24,7 @@
         //             //show success.Upcoming displayDialog API will help here.
         //         }
         //     });
+        var testCell = Office.context.document.
          Office.context.document.setSelectedDataAsync(
     {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
         {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
@@ -33,6 +34,10 @@
         $("#back")[0].classList.remove("hidden");
         $("#back")[0].onclick = backToAll;
         $("#individualView")[0].classList.remove("hidden");
+        var mySelection = context.document.getSelection().parentTableCell;
+            context.load(mySelection);
+            console.log(context.sync());
+            return context.sync()
     }
     function createNew() {
         $("#allComments")[0].classList.add("hidden");
