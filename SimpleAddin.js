@@ -20,6 +20,7 @@
             });
 
             $(".submitPerson")[0].click(function (event) {
+                console.log($("#currentCollab1")[0]);
                 $("#currentCollab1")[0].classList.add("hidden");
                 $("#brownBear")[0].classList.add("hidden");
                 $("#currentCollab2")[0].classList.remove("hidden");
