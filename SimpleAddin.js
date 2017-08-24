@@ -3,9 +3,6 @@
     var currentCellText; 
     Office.initialize = function (reason) {
         $(document).ready(function () {
-            $(".chosen-select").chosen({
-                no_results_text: "Oops, nothing found!"
-            })
             $("#clickMe").click(function (event) {
                 clickMe();
             });
@@ -22,6 +19,11 @@
                 console.log($("#statusChange")[0]);
             });
 
+            $(".submitPerson")[0].click(function (event) {
+                $("#currentCollab1")[0].classList.add("hidden");
+                $("#brownBear")[0].classList.add("hidden");
+                $("#currentCollab2")[0].classList.remove("hidden");
+            });
         });
     };
     // Reads data from current document selection and displays a notification
