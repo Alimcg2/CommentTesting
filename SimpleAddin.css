@@ -94,13 +94,15 @@ textarea {
 .gray, .commentInput {
 	font-family: "Segoe UI", Arial, Verdana, sans-serif, "Mongolian Baiti", "Microsoft Yi Baiti", "Javanese Text";
 	color: #727272;
+}
+.commentInput{}
 	font-size: 10px;
 }
 .descr {
 	font-size: 14px;
-	margin: 0px;
+	margin-top: 10px;
 }
-.submitComment, .submitPerson {
+.submitComment, .submitPerson, #submitPerson {
 	font-size: 10px;
 	padding: 8px;
 	margin: 10px;
