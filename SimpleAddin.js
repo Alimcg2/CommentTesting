@@ -16,7 +16,7 @@
 
             $("#cancelButton").click(function (event) {
                 bindNamedItem({row: 4, column: 3}, "#a88986");
-                console.log($("#statusChange")[0]);
+                $("#statusChange")[0].innerHTML = "Stopped";
             });
 
             $(".submitPerson")[0].click(function (event) {

@@ -123,3 +123,12 @@ textarea {
 	border: 1px solid #e7e7e7; 
 	margin: 10px;
 }
+#downArrow {
+	width: 40px;
+	display: inline;
+	vertical-align: bottom;
+	float: right;
+}
+h1 {
+	display: inline;
+}
