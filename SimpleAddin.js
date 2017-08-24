@@ -13,8 +13,10 @@
             $("#inactiveConvos").click(function (event) {
                 showInactive();
             });
+
             $("#cancelButton").click(function (event) {
-                bindNamedItem({row: 4, column: 3}, "#914549");
+                bindNamedItem({row: 4, column: 3}, "#a88986");
+                console.log($("#statusChange")[0]);
             });
 
         });
@@ -61,7 +63,7 @@
         $("#back")[0].classList.remove("hidden");
         $("#back")[0].onclick = backToAll;
         $("#newView")[0].classList.remove("hidden");
-        document.getElementById("updateCell").innerHTML = getText();
+        //document.getElementById("updateCell").innerHTML = getText();
     }
     function backToAll() {
         $("#allComments")[0].classList.remove("hidden");
