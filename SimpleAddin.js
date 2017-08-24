@@ -13,7 +13,7 @@
             $("#inactiveConvos").click(function (event) {
                 showInactive();
             });
-            $("#cancelButton").click(function (event)) {
+            $("#cancelButton").click(function (event) {
                 bindNamedItem({row: 4, column: 3}, "#2f4260");
             });
 
