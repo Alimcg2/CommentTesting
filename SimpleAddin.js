@@ -48,8 +48,16 @@
     [
         {cells: {row: 4, column: 3}, format: {fontColor: "red", fontStyle: "bold"}}], 
     function (asyncResult){});
+    getDataWithContext();
 }
+    function getDataWithContext() {
+        var format = "Your data: ";
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, { asyncContext: format }, showDataWithContext);
+    }
 
+     function showDataWithContext(asyncResult) {
+        console.log(asyncResult.asyncContext + asyncResult.value);
+    }
     function createNew() {
         $("#allComments")[0].classList.add("hidden");
         $("#createNew")[0].classList.add("hidden");
