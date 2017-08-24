@@ -10,7 +10,7 @@
             $("#createNew").click(function (event) {
                 createNew();
             });
-            $("#inactiveConvos").click(function (event)) {
+            $("#inactiveConvos").click(function (event) {
                 showInactive();
             });
         });
