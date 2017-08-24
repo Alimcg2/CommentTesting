@@ -10,6 +10,9 @@
             $("#createNew").click(function (event) {
                 createNew();
             });
+            $("#inactiveConvos").click(function (event)) {
+                showInactive();
+            }
         });
     };
     // Reads data from current document selection and displays a notification
@@ -53,7 +56,6 @@
         $("#back")[0].classList.remove("hidden");
         $("#back")[0].onclick = backToAll;
         $("#newView")[0].classList.remove("hidden");
-        console.log(document.getElementById("updateCell"));
         document.getElementById("updateCell").innerHTML = getText();
     }
     function backToAll() {
@@ -79,6 +81,15 @@
                     return dataValue;
                 }
             });
+    }
+    function showInactive(){
+        $("#inactive1")[0].classList.remove("hidden");
+        $("#inactive2")[0].classList.remove("hidden");
+        $("#inactiveConvos")[0].onclick = hideInactive;
+    }
+    function hideInactive(){
+        $("#inactive1")[0].classList.add("hidden");
+        $("#inactive2")[0].classList.add("hidden");
     }
 
 })();

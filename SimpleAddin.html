@@ -28,7 +28,7 @@
         Create New Thread
     </button>
     <div id="allComments">
-        <h1>Active</h1>
+        <h1>Active Converstaions</h1>
         <div class="sheetComments">
             <h2>00_01</h2>
             <div class="cellComments">
@@ -54,9 +54,8 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <h1>Inactive</h1>
-        <div class="sheetComments">
+        <h1 id="inactiveConvos">Inactive Conversations</h1>
+        <div class="sheetComments hidden" id="inactive1">
             <h2>00_01</h2>
             <div class="cellComments">
                 <div class="cellComment">
@@ -66,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <div class="sheetComments">
+        <div class="sheetComments hidden" id="inactive2">
             <h2>01_02</h2>
             <div class="cellComments">
                 <div class="cellComment">
@@ -82,11 +81,7 @@
         <div class="title">
             <span class="page">00_01</span>
             <span class="cell">D6</span>
-        </div>
-        <div class="statusBox">
-            <p class="status"><span class="gray">Status: </span> In Progress</p>
-            <span class="markResolved"><img class="statusButton" src="Images/Resolved.png"></span>
-            <span class="markCanceled"><img class="statusButton" src="Images/Canceled.png"></span>
+            <span class="status"><span class="gray">Status: </span> In Progress</span>
         </div>
         <p class="inCell" id="updateCell">We need a graphic of a 3 pronged adaptor here</p>
         <div class="commentArea">
@@ -117,22 +112,26 @@
         </div>
         <textarea rows="4" cols="35" class="commentInput">Comment</textarea>
         <button class="submitComment button">Submit</button>
+        <div class="statusBox">
+            <span class="markResolved"><img class="statusButton" src="Images/Resolved.png"></span>
+            <span class="markCanceled"><img class="statusButton" src="Images/Canceled.png"></span>
+        </div>
     </div>
 
     <div id="newView" class="hidden">
         <div class="title">
             <span class="page">00_01</span>
             <span class="cell">D3</span>
-        </div>
-        <div class="statusBox">
-            <p class="status"><span class="gray">Status: </span> In Progress</p>
-            <span class="markResolved"><img class="statusButton" src="Images/Resolved.png"></span>
-            <span class="markCanceled"><img class="statusButton" src="Images/Canceled.png"></span>
+            <span class="status"><span class="gray">Status: </span> In Progress</span>
         </div>
         <p class="gray">Description:</p>
         <p class="inCell">commenting here</p>
         <textarea rows="4" cols="35" class="commentInput">Comment</textarea>
         <button class="submitComment button">Submit</button>
+        <div class="statusBox">
+            <span class="markResolved"><img class="statusButton" src="Images/Resolved.png"></span>
+            <span class="markCanceled"><img class="statusButton" src="Images/Canceled.png"></span>
+        </div>
     </div>
 <!--     <button class="ms-Button" id="writeTextButton">
         <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
