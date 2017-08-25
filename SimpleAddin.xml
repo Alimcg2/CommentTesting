@@ -19,7 +19,7 @@
   <!--BeginTaskpaneMode integration. Office 2013 and any client that doesn't understand commands will use this section.
     This section will also be used if there are no VersionOverrides -->
   <Hosts>
-    <Host Name="Document"/>
+    <Host Name="Workbook"/>
   </Hosts>
   <DefaultSettings>
     <SourceLocation DefaultValue="https://alimcg2.github.io/CommentTesting/SimpleAddin.html" />
@@ -114,55 +114,6 @@
                     <SourceLocation resid="Contoso.Taskpane1.Url" />
                   </Action>
                 </Control>
-            <!-- Menu example -->
-            <Control xsi:type="Menu" id="Contoso.Menu">
-              <Label resid="Contoso.Dropdown.Label" />
-              <Supertip>
-                <Title resid="Contoso.Dropdown.Label" />
-                <Description resid="Contoso.Dropdown.Tooltip" />
-              </Supertip>
-              <Icon>
-                <bt:Image size="16" resid="Contoso.TaskpaneButton.Icon" />
-                <bt:Image size="32" resid="Contoso.TaskpaneButton.Icon" />
-                <bt:Image size="80" resid="Contoso.TaskpaneButton.Icon" />
-              </Icon>
-              <Items>
-                <Item id="Contoso.Menu.Item1">
-                  <Label resid="Contoso.Item1.Label"/>
-                  <Supertip>
-                    <Title resid="Contoso.Item1.Label" />
-                    <Description resid="Contoso.Item1.Tooltip" />
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Contoso.TaskpaneButton.Icon" />
-                    <bt:Image size="32" resid="Contoso.TaskpaneButton.Icon" />
-                    <bt:Image size="80" resid="Contoso.TaskpaneButton.Icon" />
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>MyTaskPaneID1</TaskpaneId>
-                    <SourceLocation resid="Contoso.Taskpane1.Url" />
-                  </Action>
-                </Item>
-
-                <Item id="Contoso.Menu.Item2">
-                  <Label resid="Contoso.Item2.Label"/>
-                  <Supertip>
-                    <Title resid="Contoso.Item2.Label" />
-                    <Description resid="Contoso.Item2.Tooltip" />
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Contoso.TaskpaneButton.Icon" />
-                    <bt:Image size="32" resid="Contoso.TaskpaneButton.Icon" />
-                    <bt:Image size="80" resid="Contoso.TaskpaneButton.Icon" />
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>MyTaskPaneID2</TaskpaneId>
-                    <SourceLocation resid="Contoso.Taskpane2.Url" />
-                  </Action>
-                </Item>
-              
-              </Items>
-            </Control>
 
               </Group>
 
@@ -194,8 +145,8 @@
         <bt:String id="Contoso.Item1.Label" DefaultValue="Show Taskpane 1" />
         <bt:String id="Contoso.Item2.Label" DefaultValue="Show Taskpane 2" />
         <bt:String id="Contoso.Tab1.GroupLabel" DefaultValue="Test Group" />
-         <bt:String id="Contoso.Tab1.TabLabel" DefaultValue="Test Tab" />
-         <bt:String id="Contoso.GetStarted.Title" DefaultValue="Simple add-in was succesfully loaded">
+         <bt:String id="Contoso.Tab1.TabLabel" DefaultValue="Collaboration" />
+         <bt:String id="Contoso.GetStarted.Title" DefaultValue="Collaboration add-in was succesfully loaded">
           <bt:Override Locale="ja-jp" Value="JA-JP Get Started Title" />
         </bt:String>      
       </bt:ShortStrings>
@@ -205,7 +156,7 @@
         <bt:String id="Contoso.Dropdown.Tooltip" DefaultValue="Click to Show Options on this Menu" />
         <bt:String id="Contoso.Item1.Tooltip" DefaultValue="Click to Show Taskpane1" />
         <bt:String id="Contoso.Item2.Tooltip" DefaultValue="Click to Show Taskpane2" />
-          <bt:String id="Contoso.GetStarted.Description" DefaultValue="Get going by opening TEST TAB on the Ribbon">
+          <bt:String id="Contoso.GetStarted.Description" DefaultValue="Get going by opening Collaboration on the Ribbon">
           <bt:Override Locale="ja-jp" Value="JA-JP Get Started Title" />
         </bt:String>  
       </bt:LongStrings>
