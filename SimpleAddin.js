@@ -68,7 +68,6 @@
         $("#back")[0].classList.remove("hidden");
         $("#back")[0].onclick = backToAll;
         $("#newView")[0].classList.remove("hidden");
-        //document.getElementById("updateCell").innerHTML = getText();
     }
     function backToAll() {
         $("#allComments")[0].classList.remove("hidden");
@@ -78,22 +77,6 @@
         $("#newView")[0].classList.add("hidden");
     }
 
-    function getText() {
-        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text,
-            { valueFormat: "unformatted", filterType: "all" },
-            function (asyncResult) {
-                var error = asyncResult.error;
-                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                    console.log(error.name + ": " + error.message);
-                }
-                else {
-                    // Get selected data.
-                    var dataValue = asyncResult.value;
-                    console.log('Selected data is ' + dataValue);
-                    return dataValue;
-                }
-            });
-    }
     function showInactive(){
         $("#inactive1")[0].classList.remove("hidden");
         $("#inactive2")[0].classList.remove("hidden");
